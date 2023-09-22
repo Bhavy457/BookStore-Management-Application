@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bookcave">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/bookcavelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/bookcavelogo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name=".RentBook"></activity>
+        <activity android:name=".ViewOrderCustomer" />
+        <activity android:name=".UpdateOrder" />
+        <activity android:name=".Placed" />
+        <activity android:name=".ChangeAddress" />
+        <activity android:name=".BuyBook" />
+        <activity android:name=".BookInfoOrder" />
+        <activity android:name=".BookInfo" />
+        <activity android:name=".extras.PreviewBook" />
+        <activity android:name=".AddBook" />
+        <activity android:name=".profile.AboutApp" />
+        <activity
+            android:name=".HomeSeller"
+            android:label="@string/title_activity_home_seller"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".profile.ContactDeveloper" />
+        <activity android:name=".profile.PaymentHistoryC" />
+        <activity android:name=".profile.OrderHistoryC" />
+        <activity android:name=".profile.Favourites" />
+        <activity android:name=".profile.ProfileCustomer" />
+        <activity
+            android:name=".HomeCustomer"
+            android:label="@string/title_activity_home_customer" />
+        <activity android:name=".CreateAccountCustomer" />
+        <activity android:name=".CreatAccountSeller" />
+        <activity android:name=".forgot_password" />
+        <activity android:name=".CustomerLogin" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
